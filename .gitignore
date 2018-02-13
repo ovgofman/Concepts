@@ -2,7 +2,7 @@
 
 *.class
 
+*.war
 *.jar
 *.ear
-*.war
 
