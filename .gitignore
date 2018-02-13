@@ -1,9 +1,8 @@
 .idea/*
 
 *.class
-*.iml
+
 *.jar
 *.ear
 *.war
-out
-gen
+
