@@ -8,7 +8,7 @@ public class eq006 {
     public static void main(String[] args) {
         double x = 099d;
 
-        if (x >= 100) {
+        if (x < 1000 && x >= 100) {
             double firstDigit = (int) x / 10 / 10;
             double secondDigit = (int) x / 10 % 10;
             double thirdDigit = (int) x % 10;
@@ -19,7 +19,7 @@ public class eq006 {
             double secondDigit = (int) x % 10;
             System.out.println((int) (firstDigit + secondDigit));
         }
-        if (x < 10) {
+        if (x < 10 && x >= 0) {
             System.out.println((int) x);
         }
     }
