@@ -13,7 +13,5 @@ public class eq004 {
         int secondDigit = Integer.parseInt(xToString.substring(1));
 
         System.out.println(firstDigit + secondDigit);
-
-
     }
 }
