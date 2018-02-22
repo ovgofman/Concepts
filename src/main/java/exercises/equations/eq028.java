@@ -14,7 +14,7 @@ public class eq028 {
 
         System.out.print("Enter a number: ");
         int divider = Integer.parseInt(reader.readLine());
-        System.out.println("Dividers: ");
+        System.out.print("Dividers: ");
 
         for (int i = 1; i <= divider; i++) {
             if (divider % i == 0) {

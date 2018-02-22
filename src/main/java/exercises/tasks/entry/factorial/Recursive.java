@@ -1,4 +1,4 @@
-package exercises.factorial;
+package exercises.tasks.entry.factorial;
 
 /**
  * Created by hofa on 13.02.2018.
