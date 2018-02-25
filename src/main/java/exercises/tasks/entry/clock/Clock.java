@@ -15,7 +15,7 @@ public class Clock {
             for (int j = 0; j < 60; j++) {
                 minutes.append(String.format(format, j)).reverse();
                 if (hours.toString().equals(minutes.toString())) {
-                    System.out.printf("%02d - %s:%s\n", ++counter, hours, minutes.reverse());
+                    System.out.printf("%2d - %s:%s\n", ++counter, hours, minutes.reverse());
                 }
                 minutes.delete(0, minutes.length());
             }
