@@ -6,7 +6,7 @@ import java.util.Random;
 /**
  * Created by hofa on 25.02.2018.
  */
-public class arr007 {
+public class arr008 {
     public static void main(String[] args) {
         Random random = new Random();
         Integer randomArray[] = new Integer[12];
