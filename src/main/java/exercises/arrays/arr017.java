@@ -9,35 +9,30 @@ import java.util.Random;
 public class arr017 {
     public static void main(String[] args) throws IOException {
         Random random = new Random();
-        int[][] twoDarray = new int[6][7];
+        int[][] array = new int[1][7];
 
-        for (int row = 0; row < twoDarray.length; row++) {
-            for (int index = 0; index < twoDarray[row].length; index++) {
-                twoDarray[row][index] = random.nextInt(10);
-
-                int maxValueForEachRow = 0;
-                int indexOfMaxValueForEachRow = 0;
-                System.out.print(twoDarray[row][index] + " ");
-
-                if (index == 0) {
-                    maxValueForEachRow = twoDarray[row][index];
-                } else if (maxValueForEachRow < twoDarray[row][index]) {
-                    maxValueForEachRow = twoDarray[row][index];
-                    indexOfMaxValueForEachRow = index;
+        for (int row = 0; row < array.length; row++) {
+            for (int index = 0; index < array[row].length; index++) {
+                array[row][index] = random.nextInt(10);
+                System.out.print(array[row][index] + " ");
+            }
+            System.out.println();
+        }
+        for (int row = 0; row < array.length; row++) {
+            for (int index = array[row].length -1; index > 0; index--) {
+                if (array[row][index] > array[row][index - 1]) {
+                    int temp = array[row][index];
+                    array[row][index] = array[row][index - 1];
+                    array[row][index - 1] = temp;
                 }
-
-                if (index == twoDarray[row].length - 1) {
-                    int temp = twoDarray[row][0];
-                    twoDarray[row][0] = twoDarray[row][indexOfMaxValueForEachRow];
-                    twoDarray[row][indexOfMaxValueForEachRow] = temp;
-                }
+            }
+        }
+        System.out.println("++++++++++++++++");
+        for (int row = 0; row < array.length; row++) {
+            for (int index = 0; index < array[row].length; index++) {
+                System.out.print(array[row][index] + " ");
             }
             System.out.println(" ");
-        }
-        for (int row = 0; row < twoDarray.length; row++) {
-            for (int index = 0; index < twoDarray[row].length; index++) {
-                System.out.print(twoDarray[row][index] + " ");
-            }
         }
     }
 }
