@@ -15,9 +15,9 @@ public class meth003 {
         }
     }
 
-    public static int[] sortASC(int[] sortArray) {
-if (sortArray[i]>)
-    }
+//    public static int[] sortASC(int[] sortArray) {
+//if (sortArray[i]>)
+//    }
 
     public static int[] fillInAnArray(int[] arr) {
         for (int i = 0; i < arr.length; i++) {
