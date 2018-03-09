@@ -18,13 +18,18 @@ public class meth003 {
     }
 
     public static int[] sortASC(int[] sortArray) {
-        for (int i = 0; i < sortArray.length; i++) {
+        for (int i = sortArray.length - 1; i >= 1; i--) {
+            boolean sorted = true;
             for (int j = 0; j < i; j++) {
                 if (sortArray[j] > sortArray[j + 1]) {
                     int temp = sortArray[j];
                     sortArray[j] = sortArray[j + 1];
                     sortArray[j + 1] = temp;
+                    sorted = false;
                 }
+            }
+            if (sorted) {
+                break;
             }
         }
         return sortArray;
