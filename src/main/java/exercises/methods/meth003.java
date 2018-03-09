@@ -9,15 +9,26 @@ import java.util.Random;
 public class meth003 {
     public static void main(String[] args) {
         int arr[] = new int[5];
-        for (int i = 0; i < 5; i++) {
+        for (int i = 0; i < 2; i++) {
             fillInAnArray(arr);
-            System.out.println(Arrays.toString(arr));
+            System.out.println("Before: " + Arrays.toString(arr));
+            sortASC(arr);
+            System.out.println("After : " + Arrays.toString(arr));
         }
     }
 
-//    public static int[] sortASC(int[] sortArray) {
-//if (sortArray[i]>)
-//    }
+    public static int[] sortASC(int[] sortArray) {
+        for (int i = 0; i < sortArray.length; i++) {
+            for (int j = 0; j < i; j++) {
+                if (sortArray[j] > sortArray[j + 1]) {
+                    int temp = sortArray[j];
+                    sortArray[j] = sortArray[j + 1];
+                    sortArray[j + 1] = temp;
+                }
+            }
+        }
+        return sortArray;
+    }
 
     public static int[] fillInAnArray(int[] arr) {
         for (int i = 0; i < arr.length; i++) {

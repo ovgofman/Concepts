@@ -22,9 +22,9 @@ public class meth002 {
         return arr;
     }
 
-    public static int createNumber(int from, int to) {
+    public static int createNumber(int from, int till) {
         Random random = new Random();
-        int temp = from + random.nextInt(to - from);
+        int temp = from + random.nextInt(till - from);
         return temp;
     }
 }
