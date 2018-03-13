@@ -1,9 +1,9 @@
 package exercises.tasks.entry.fibonacci;
 
 /**
- * Created by hofa on 14.02.2018.
+ * Created by hofa on 13.03.2018.
  */
-public class Recursive implements Fibonacci {
+public class XFibAppearsInYFib implements Fibonacci {
     public long count(int fib) {
         if (fib == 1 || fib == 2) {
             return 1;

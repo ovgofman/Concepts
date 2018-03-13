@@ -5,16 +5,15 @@ package exercises.tasks.entry.fibonacci;
  */
 public class FibonacciRunner {
     public static void main(String[] args) {
-        long end, start;
+        int xFib = 4, yFib = 15;
         Fibonacci iterative = new Iterative();
         Fibonacci recursive = new Recursive();
         HybridFibonacci hybridFibonacci = new HybridFibonacci();
-        start = System.currentTimeMillis();
+        XFibAppearsInYFib xFibAppearsInYFib = new XFibAppearsInYFib();
+
 //         System.out.println(iterative.count(1));
 //        System.out.println(recursive.count(1));
-        System.out.println(hybridFibonacci.count(50));
-        end = System.currentTimeMillis();
-        System.out.println((end - start) / 1000L + " sec");
-
+//        System.out.println(hybridFibonacci.count(40) + " sec");
+        System.out.println("There are " + xFibAppearsInYFib.count(yFib - xFib + 1) + " times recount fib(" + xFib + ") in fib(" + yFib + ")");
     }
 }
