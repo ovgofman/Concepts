@@ -52,8 +52,8 @@ public class Circle {
             System.out.println("Circles haven't got any intersections");
         } else if (length == (c.radius + c2.radius)) {
             System.out.println("Circles have got the only intersection");
-        } else if (length < c.radius + c2.radius &&) {
-            System.out.println("Circles have got two intersections");  //check it
+        } else if (length < c.radius + c2.radius &&) {                                     //check it
+            System.out.println("Circles have got two intersections");
         } else if (Math.abs(c2.radius - c.radius) == length && (2 * Math.PI * c.radius < 2 * Math.PI * c2.radius | 2 * Math.PI * c2.radius < 2 * Math.PI * c.radius)) {
             System.out.println("Circles have got the only intersection");
             System.out.println("Inner type;");
