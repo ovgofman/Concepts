@@ -9,16 +9,18 @@ import java.util.Arrays;
 /**
  * Created by hofa on 13.04.2018.
  */
-public class Main {
+public class _60160 {
     public static void main(String[] args) throws IOException {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         ArrayList<String> stringToArray = new ArrayList<>(Arrays.asList(reader.readLine().split(" ")));
 
-        double a = Double.parseDouble(stringToArray.get(0));
-        double b = Double.parseDouble(stringToArray.get(1));
+        int length = Integer.parseInt(stringToArray.get(0));
+        int value = Integer.parseInt(stringToArray.get(1));
 
-        b = Math.pow(a, b);
-
-        System.out.println(b);
+        int[] array = new int[length];
+        for (int i = 0; i < array.length ; i++) {
+            array[i] = value;
+        }
+        System.out.println(Arrays.toString(array));
     }
 }
